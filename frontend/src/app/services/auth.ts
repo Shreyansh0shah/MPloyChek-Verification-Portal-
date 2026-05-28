@@ -19,4 +19,18 @@ export class AuthService {
       data
     );
   }
+  register(data: any): Observable<any> {
+  return this.http.post(
+    `${this.apiUrl}/register`,
+    data
+  );
+}
+
+getUsers(): Observable<any> {
+
+  return this.http.get(
+    `${this.apiUrl}/users`
+  );
+}
+  
 }

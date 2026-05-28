@@ -6,51 +6,91 @@
 >
 </ngx-spinner>
 
-<div class="login-container">
-  <mat-card class="login-card">
+<div class="main-container">
 
-    <h2>MPloyChek Login</h2>
+  <!-- LEFT SIDE -->
 
-    <form
-      [formGroup]="loginForm"
-      (ngSubmit)="onLogin()"
-    >
+  <div class="left-section">
 
-      <mat-form-field
-        appearance="outline"
-        class="full-width"
+    <img
+      src="/logo.jpeg"
+      alt="MPloyChek Logo"
+      class="logo"
+    />
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+
+  <div class="right-section">
+
+    <mat-card class="login-card">
+
+      <h2>MPloyChek Login</h2>
+
+      <p class="subtitle">
+        Secure Employee Verification Portal
+      </p>
+
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="onLogin()"
       >
-        <mat-label>Email</mat-label>
 
-        <input
-          matInput
-          type="email"
-          formControlName="email"
-        />
-      </mat-form-field>
+        <mat-form-field
+          appearance="outline"
+          class="full-width"
+        >
 
-      <mat-form-field
-        appearance="outline"
-        class="full-width"
-      >
-        <mat-label>Password</mat-label>
+          <mat-label>Email</mat-label>
 
-        <input
-          matInput
-          type="password"
-          formControlName="password"
-        />
-      </mat-form-field>
+          <input
+            matInput
+            type="email"
+            formControlName="email"
+          />
 
-      <button
-        mat-raised-button
-        color="primary"
-        class="full-width"
-      >
-        Login
-      </button>
+        </mat-form-field>
 
-    </form>
+        <mat-form-field
+          appearance="outline"
+          class="full-width"
+        >
 
-  </mat-card>
+          <mat-label>Password</mat-label>
+
+          <input
+            matInput
+            type="password"
+            formControlName="password"
+          />
+
+        </mat-form-field>
+
+        <button
+          mat-raised-button
+          color="primary"
+          class="full-width"
+        >
+          Login
+        </button>
+
+      </form>
+
+      <div class="register-box">
+
+        <span>
+          Don’t have an account?
+        </span>
+
+        <a routerLink="/register">
+          Create Account
+        </a>
+
+      </div>
+
+    </mat-card>
+
+  </div>
+
 </div>

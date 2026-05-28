@@ -1,18 +1,85 @@
-<app-navbar></app-navbar>
-
 <div class="dashboard-container">
 
-  <mat-card class="user-card">
+  <!-- NAVBAR -->
 
-    <h2>User Details</h2>
+  <div class="top-navbar">
 
-    <p><strong>Name:</strong> {{ user.name }}</p>
+    <h2>MPloyChek Portal</h2>
 
-    <p><strong>Email:</strong> {{ user.email }}</p>
+    <button
+      mat-raised-button
+      class="logout-btn"
+      (click)="logout()"
+    >
+      Logout
+    </button>
 
-    <p><strong>Role:</strong> {{ user.role }}</p>
+  </div>
 
-  </mat-card>
+  <!-- USER DETAILS -->
+<mat-card class="dashboard-card">
+
+  <div class="profile-header">
+
+    <div class="profile-avatar">
+      S
+    </div>
+
+    <div>
+
+      <h2>Shreyansh</h2>
+
+      <p class="role-badge">
+        Admin User
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="details-grid">
+
+  <div class="detail-box">
+
+    <span class="detail-label">
+      Email
+    </span>
+
+    <span class="detail-value">
+      admin@test.com
+    </span>
+
+  </div>
+
+  <div class="detail-box">
+
+    <span class="detail-label">
+      Role
+    </span>
+
+    <span class="detail-value">
+      Administrator
+    </span>
+
+  </div>
+
+  <div class="detail-box">
+
+    <span class="detail-label">
+      Department
+    </span>
+
+    <span class="detail-value">
+      Verification Team
+    </span>
+
+  </div>
+
+</div>
+
+</mat-card>
+
+  <!-- RECORDS -->
 
   <mat-card class="records-card">
 
@@ -21,17 +88,31 @@
     <table>
 
       <thead>
+
         <tr>
           <th>Title</th>
           <th>Status</th>
         </tr>
+
       </thead>
 
       <tbody>
-        <tr *ngFor="let record of records">
-          <td>{{ record.title }}</td>
-          <td>{{ record.status }}</td>
+
+        <tr>
+          <td>Background Verification</td>
+          <td>Completed</td>
         </tr>
+
+        <tr>
+          <td>Document Verification</td>
+          <td>Pending</td>
+        </tr>
+
+        <tr>
+          <td>Employment Check</td>
+          <td>Completed</td>
+        </tr>
+
       </tbody>
 
     </table>

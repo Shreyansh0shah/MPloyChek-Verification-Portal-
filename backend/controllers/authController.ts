@@ -1,5 +1,6 @@
 import {Request, Response} from 'express';
-import bcrypt from 'bcrypt';
+
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
 import User from '../models/User';
@@ -107,6 +108,25 @@ export const loginUser = async (
     res.status(500).json({
       message: 'Server Error',
       error,
+    });
+  }
+};
+
+export const getUsers = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+
+  try {
+
+    const users = await User.find();
+
+    res.status(200).json(users);
+
+  } catch (error) {
+
+    res.status(500).json({
+      message: 'Server Error',
     });
   }
 };

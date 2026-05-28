@@ -1,0 +1,36 @@
+.admin-container {
+  padding: 30px;
+
+  background: #f5f5f5;
+
+  min-height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.top-bar h2 {
+  color: #1976d2;
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.admin-card {
+  padding: 24px;
+
+  border-radius: 14px;
+}
+.search-field {
+  width: 320px;
+
+  margin-bottom: 20px;
+}

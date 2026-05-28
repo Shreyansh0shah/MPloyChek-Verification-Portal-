@@ -13,7 +13,6 @@ import { MatCardModule } from '@angular/material/card';
 
   imports: [
     CommonModule,
-    NavbarComponent,
     MatCardModule,
   ],
 
@@ -22,6 +21,12 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './dashboard.css',
 })
 export class DashboardComponent {
+  logout(): void {
+
+  localStorage.clear();
+
+  window.location.href = '/';
+}
   user = {
     name: 'Shreyansh',
     email: 'admin@test.com',
