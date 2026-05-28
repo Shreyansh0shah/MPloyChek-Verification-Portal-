@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-container">
+
+  <mat-card class="user-card">
+
+    <h2>User Details</h2>
+
+    <p><strong>Name:</strong> {{ user.name }}</p>
+
+    <p><strong>Email:</strong> {{ user.email }}</p>
+
+    <p><strong>Role:</strong> {{ user.role }}</p>
+
+  </mat-card>
+
+  <mat-card class="records-card">
+
+    <h2>User Records</h2>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let record of records">
+          <td>{{ record.title }}</td>
+          <td>{{ record.status }}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </mat-card>
+
+</div>

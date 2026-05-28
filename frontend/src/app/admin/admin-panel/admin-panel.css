@@ -1,0 +1,26 @@
+.admin-container {
+  padding: 30px;
+}
+
+.admin-card,
+.users-card {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.form-section {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
