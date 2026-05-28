@@ -1,37 +1,113 @@
-# Role-Based Verification Dashboard
+# MPloyChek Verification Portal
 
-A Single Page Application built as part of a Software Engineer Internship 
-assessment for NSQTech Private Limited.
+A full-stack role-based authentication and verification management portal built using Angular 20 standalone architecture, Node.js, Express.js, TypeScript, MongoDB Atlas, and JWT authentication.
 
-## Features
-- JWT-style login with role-based access (Admin / General User)
-- Async concurrent API calls using Promise.all on dashboard load
-- Admin panel — add/remove users, configure API delay
-- Real-time verification records table with search and filter
-- API call logger with timestamps
+---
 
-## Tech Stack
-- Angular 12+
-- TypeScript
-- Node.js
-- REST API (dummy layer with configurable delay)
+# Features
 
-## Roles
-| Role | Access |
-|------|--------|
-| Admin | Full dashboard + user management panel |
-| General User | Own records only |
+* JWT Authentication
+* Login System
+* Protected Routes
+* Angular 20 Standalone Architecture
+* Admin Panel
+* Add/Delete Users
+* Role-Based UI
+* MongoDB Atlas Integration
+* Loading Spinner
+* Simulated Async API Delay
+* Angular Material UI
+* Route Guards
 
-## Run Locally
+---
+
+# Tech Stack
+
+## Frontend
+
+* Angular 20
+* Angular Material
+* TypeScript
+* RxJS
+
+## Backend
+
+* Node.js
+* Express.js
+* TypeScript
+* JWT Authentication
+
+## Database
+
+* MongoDB Atlas
+
+---
+
+# Project Structure
+
 ```bash
-git clone https://github.com/your-username/role-based-verification-dashboard
-cd role-based-verification-dashboard
+backend/
+frontend/
+screenshots/
+README.md
+```
+
+---
+
+# Installation
+
+## Backend
+
+```bash
+cd backend
+
 npm install
+
+npm run dev
+```
+
+## Frontend
+
+```bash
+cd frontend
+
+npm install
+
 ng serve
 ```
 
-## Demo Credentials
-| User ID | Password | Role |
-|---------|----------|------|
-| admin01 | pass123 | Admin |
-| user01 | pass456 | General User |
+---
+
+# Environment Variables
+
+Create `.env` inside backend:
+
+```env
+PORT=3000
+
+MONGO_URI=your_mongodb_uri
+
+JWT_SECRET=your_secret_key
+```
+
+---
+
+# Screenshots
+
+## Login Page
+
+(Add screenshot here)
+
+## Dashboard
+
+(Add screenshot here)
+
+## Admin Panel
+
+(Add screenshot here)
+
+---
+
+# Author
+
+Shreyansh Shah
