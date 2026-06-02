@@ -109,5 +109,4 @@ JWT_SECRET=your_secret_key
 ---
 
 # Author
-
 Shreyansh Shah
