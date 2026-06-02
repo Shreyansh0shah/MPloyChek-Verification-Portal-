@@ -92,21 +92,6 @@ JWT_SECRET=your_secret_key
 
 ---
 
-# Screenshots
-
-## Login Page
-
-(Add screenshot here)
-
-## Dashboard
-
-(Add screenshot here)
-
-## Admin Panel
-
-(Add screenshot here)
-
----
 
 # Author
 Shreyansh Shah
