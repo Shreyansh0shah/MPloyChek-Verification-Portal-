@@ -1,4 +1,4 @@
-# MPloyChek Verification Portal
+# Employee Verification Portal
 
 A full-stack role-based authentication and verification management portal built using Angular 20 standalone architecture, Node.js, Express.js, TypeScript, MongoDB Atlas, and JWT authentication.
 
